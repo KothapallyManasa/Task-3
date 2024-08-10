@@ -1,0 +1,46 @@
+root@ip-172-31-44-194:~#
+root@ip-172-31-44-194:~# nslookup guvi.in
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   guvi.in
+Address: 104.26.4.88
+Name:   guvi.in
+Address: 172.67.70.207
+Name:   guvi.in
+Address: 104.26.5.88
+Name:   guvi.in
+Address: 2606:4700:20::681a:558
+Name:   guvi.in
+Address: 2606:4700:20::ac43:46cf
+Name:   guvi.in
+Address: 2606:4700:20::681a:458
+
+root@ip-172-31-44-194:~#
+
+root@ip-172-31-44-194:~#
+root@ip-172-31-44-194:~# dig guvi.in
+
+; <<>> DiG 9.18.28-0ubuntu0.24.04.1-Ubuntu <<>> guvi.in
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34436
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;guvi.in.                       IN      A
+
+;; ANSWER SECTION:
+guvi.in.                300     IN      A       104.26.4.88
+guvi.in.                300     IN      A       172.67.70.207
+guvi.in.                300     IN      A       104.26.5.88
+
+;; Query time: 6 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Fri Aug 09 23:03:25 UTC 2024
+;; MSG SIZE  rcvd: 84
+
+root@ip-172-31-44-194:~#
